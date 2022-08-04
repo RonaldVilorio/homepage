@@ -1,5 +1,5 @@
 <script>
-  import Index from './routes/index.svelte';
+  import Nav from './lib/components/Nav.svelte';
 </script>
 
-<Index />
+<Nav />
