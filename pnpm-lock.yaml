@@ -8,6 +8,7 @@ specifiers:
   postcss: ^8.4.14
   svelte: ^3.49.0
   svelte-check: ^2.8.0
+  svelte-moveable: ^0.26.3
   svelte-preprocess: ^4.10.7
   tailwindcss: ^3.1.7
   tslib: ^2.4.0
@@ -22,6 +23,7 @@ devDependencies:
   postcss: 8.4.14
   svelte: 3.49.0
   svelte-check: 2.8.0_nxvsp6sjiltnatqa6jdm4mr6zu
+  svelte-moveable: 0.26.3
   svelte-preprocess: 4.10.7_bgntxiihuqhg5mwaa7nczjwpga
   tailwindcss: 3.1.7
   tslib: 2.4.0
@@ -29,6 +31,28 @@ devDependencies:
   vite: 3.0.4
 
 packages:
+
+  /@daybrush/utils/1.6.0:
+    resolution: {integrity: sha512-9MjMoOLl1U+l8lXByN3BbLZXf+mktoLyeb6t78Jz2WZ7LRldK0FNg8oW//9giO2hHCUyxS7LX6jS1hToGIfRWA==}
+    dev: true
+
+  /@daybrush/utils/1.7.1:
+    resolution: {integrity: sha512-ruVDIfXeVAF4s0RxJoNx5hTjxlIRMnKoJ7N5e2m9eDyluIXB12EvhMPQdoq4a/ohJ+cPgj2MiWS5Lvmpsrx8Gg==}
+    dev: true
+
+  /@egjs/agent/2.4.2:
+    resolution: {integrity: sha512-UZQzdpPl0g0M1wDAiq4EY2vUzUI6P5SKGOAPkf0yxSnlcwrU8/zuoyUWbYj11ROFeHV8iW0IetGsmia83z1Hbw==}
+    dev: true
+
+  /@egjs/children-differ/1.0.1:
+    resolution: {integrity: sha512-DRvyqMf+CPCOzAopQKHtW+X8iN6Hy6SFol+/7zCUiE5y4P/OB8JP8FtU4NxtZwtafvSL4faD5KoQYPj3JHzPFQ==}
+    dependencies:
+      '@egjs/list-differ': 1.0.0
+    dev: true
+
+  /@egjs/list-differ/1.0.0:
+    resolution: {integrity: sha512-HsbMKc0ZAQH+EUeCmI/2PvTYSybmkaWwakU8QGDYYgMVIg9BQ5sM0A0Nnombjxo2+JzXHxmH+jw//yGX+y6GYw==}
+    dev: true
 
   /@jridgewell/resolve-uri/3.1.0:
     resolution: {integrity: sha512-F2msla3tad+Mfht5cJq7LSXcdudKTWCVYUgw6pLFOOHSTtZlj6SWNYAp+AhuqLmWdBO2X5hPrLcu8cVP8fy28w==}
@@ -81,6 +105,43 @@ packages:
     dependencies:
       estree-walker: 2.0.2
       picomatch: 2.3.1
+    dev: true
+
+  /@scena/dragscroll/1.2.1:
+    resolution: {integrity: sha512-bVJGC9ZpShoQB1yTRXYRhkAzC6KAlvlRPEiPb4tz15lda5F5va1wX1oeZpLTxmmHkf0x/AeVI1eolWihkILS4Q==}
+    dependencies:
+      '@daybrush/utils': 1.6.0
+      '@scena/event-emitter': 1.0.5
+    dev: true
+
+  /@scena/event-emitter/1.0.5:
+    resolution: {integrity: sha512-AzY4OTb0+7ynefmWFQ6hxDdk0CySAq/D4efljfhtRHCOP7MBF9zUfhKG3TJiroVjASqVgkRJFdenS8ArZo6Olg==}
+    dependencies:
+      '@daybrush/utils': 1.7.1
+    dev: true
+
+  /@scena/matrix/1.1.1:
+    resolution: {integrity: sha512-JVKBhN0tm2Srl+Yt+Ywqu0oLgLcdemDQlD1OxmN9jaCTwaFPZ7tY8n6dhVgMEaR9qcR7r+kAlMXnSfNyYdE+Vg==}
+    dependencies:
+      '@daybrush/utils': 1.7.1
+    dev: true
+
+  /@scena/react-guides/0.17.1:
+    resolution: {integrity: sha512-qmVKDw681kdsLvirevHPQ9jQy7aenQDy8VNsMdFgsak9GS/GcZz6wBT8lqp6otmQ5oEFjS7+4ZyFsH3tpMiDSQ==}
+    dependencies:
+      '@daybrush/utils': 1.7.1
+      '@scena/react-ruler': 0.9.1
+      css-to-mat: 1.0.3
+      framework-utils: 1.1.0
+      gesto: 1.11.2
+      react-css-styled: 1.0.3
+    dev: true
+
+  /@scena/react-ruler/0.9.1:
+    resolution: {integrity: sha512-OO3KvUWrY1Wi9JL8uVVf7BLM4UyqEWFkJ0CHVcAWmbKWyDaOCWi4cnqb0s7mOtb57jftylUM56U1vaXdQ+51OQ==}
+    dependencies:
+      '@daybrush/utils': 1.7.1
+      framework-utils: 1.1.0
     dev: true
 
   /@sveltejs/vite-plugin-svelte/1.0.1_svelte@3.49.0+vite@3.0.4:
@@ -244,6 +305,20 @@ packages:
 
   /concat-map/0.0.1:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
+    dev: true
+
+  /css-styled/1.0.0:
+    resolution: {integrity: sha512-lDdPvM2/djv+La110zVY3RGQ7X4OOlzLS+IEjRcn8UlUmJd1+GNcGfDFmsKWwnLBupsY1w0QM1gRgV4RdcCjfw==}
+    dependencies:
+      '@daybrush/utils': 1.7.1
+      string-hash: 1.1.3
+    dev: true
+
+  /css-to-mat/1.0.3:
+    resolution: {integrity: sha512-HADRhVqPc8wFqEp6ClK+uuPYg+FMBinNo2ReLyI/KQCncmHPJ60o5zldyJG7NjsTqXWbdfGJO51jnoxfMvWJiA==}
+    dependencies:
+      '@daybrush/utils': 1.7.1
+      '@scena/matrix': 1.1.1
     dev: true
 
   /cssesc/3.0.0:
@@ -549,6 +624,10 @@ packages:
     resolution: {integrity: sha512-MhLuK+2gUcnZe8ZHlaaINnQLl0xRIGRfcGk2yl8xoQAfHrSsL3rYu6FCmBdkdbhc9EPlwyGHewaRsvwRMJtAlA==}
     dev: true
 
+  /framework-utils/1.1.0:
+    resolution: {integrity: sha512-KAfqli5PwpFJ8o3psRNs8svpMGyCSAe8nmGcjQ0zZBWN2H6dZDnq+ABp3N3hdUmFeMrLtjOCTXD4yplUJIWceg==}
+    dev: true
+
   /fs.realpath/1.0.0:
     resolution: {integrity: sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==}
     dev: true
@@ -563,6 +642,13 @@ packages:
 
   /function-bind/1.1.1:
     resolution: {integrity: sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==}
+    dev: true
+
+  /gesto/1.11.2:
+    resolution: {integrity: sha512-qHdJRzXPQSxHY/eHbbp0+Qv+2/VmZy7gBhnTDrit2yjie92ssgcyvR89rPKWpEmHihjYGg4n1OxPM49R+iZL/Q==}
+    dependencies:
+      '@daybrush/utils': 1.7.1
+      '@scena/event-emitter': 1.0.5
     dev: true
 
   /glob-parent/5.1.2:
@@ -708,6 +794,15 @@ packages:
       minimist: 1.2.6
     dev: true
 
+  /moveable/0.34.3:
+    resolution: {integrity: sha512-JXSI4Ft1R/BJB53VRES295+nrM3QFn4wa9q7OhmtQ2j4iY1Pq4DjVeOd5HjWY+jAqll3xNjTNtC3K7Ozxd/7Rg==}
+    dependencies:
+      '@scena/event-emitter': 1.0.5
+      react-compat-moveable: 0.22.3
+      react-moveable: 0.37.3
+      react-simple-compat: 1.2.3
+    dev: true
+
   /mri/1.2.0:
     resolution: {integrity: sha512-tzzskb3bG8LvYGFF/mDTpq3jpI6Q9wc3LEmBaghu+DdCssd1FakN7Bc0hVNmEyGq1bq3RgfkCb3cmQLpNPOroA==}
     engines: {node: '>=4'}
@@ -746,6 +841,12 @@ packages:
     resolution: {integrity: sha512-lNaJgI+2Q5URQBkccEKHTQOPaXdUxnZZElQTZY0MFUAuaEqe1E+Nyvgdz/aIyNi6Z9MzO5dv1H8n58/GELp3+w==}
     dependencies:
       wrappy: 1.0.2
+    dev: true
+
+  /overlap-area/1.1.0:
+    resolution: {integrity: sha512-3dlJgJCaVeXH0/eZjYVJvQiLVVrPO4U1ZGqlATtx6QGO3b5eNM6+JgUKa7oStBTdYuGTk7gVoABCW6Tp+dhRdw==}
+    dependencies:
+      '@daybrush/utils': 1.7.1
     dev: true
 
   /parent-module/1.0.1:
@@ -857,6 +958,63 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
+  /react-compat-css-styled/1.0.8:
+    resolution: {integrity: sha512-CG0kVbpKjiLMQc85pP50+Z0R9PGp7NIkkGqO88QTjEsSMOGKYlCXIAnXdKR2ZII23NJmA4XrJry03jkXOxTUkg==}
+    dependencies:
+      '@daybrush/utils': 1.7.1
+      css-styled: 1.0.0
+      framework-utils: 1.1.0
+      react-css-styled: 1.0.3
+    dev: true
+
+  /react-compat-moveable/0.22.3:
+    resolution: {integrity: sha512-x0BD4XyYb92iWPf1rehNUEpg6rloJ79XiaAA5ni/idNyn3FnzRHJdehvDhzIZ4EF1Vcp8oWxS1LOYoQpN09YPA==}
+    dependencies:
+      '@daybrush/utils': 1.7.1
+      '@egjs/agent': 2.4.2
+      '@egjs/children-differ': 1.0.1
+      '@scena/dragscroll': 1.2.1
+      '@scena/matrix': 1.1.1
+      css-to-mat: 1.0.3
+      framework-utils: 1.1.0
+      gesto: 1.11.2
+      overlap-area: 1.1.0
+      react-compat-css-styled: 1.0.8
+      react-css-styled: 1.0.3
+      react-moveable: 0.37.3
+    dev: true
+
+  /react-css-styled/1.0.3:
+    resolution: {integrity: sha512-6H3aZPO66PYmYg9wx12WzOJpPlBEdA7O5JefCh+4SldlihVKBCxA6mityfWSGWL5ldOkJdHJWGwHR6nGPcVm+A==}
+    dependencies:
+      css-styled: 1.0.0
+      framework-utils: 1.1.0
+    dev: true
+
+  /react-moveable/0.37.3:
+    resolution: {integrity: sha512-9DnI7e9EnzFCm+FJXfKcWzFqVplaNG5LZSxEf77aHsUrTYz6Drw11knOOjqlp2v2ScbzJhSoyHM1El2Htcjybg==}
+    dependencies:
+      '@daybrush/utils': 1.7.1
+      '@egjs/agent': 2.4.2
+      '@egjs/children-differ': 1.0.1
+      '@scena/dragscroll': 1.2.1
+      '@scena/event-emitter': 1.0.5
+      '@scena/matrix': 1.1.1
+      '@scena/react-guides': 0.17.1
+      css-to-mat: 1.0.3
+      framework-utils: 1.1.0
+      gesto: 1.11.2
+      overlap-area: 1.1.0
+      react-css-styled: 1.0.3
+    dev: true
+
+  /react-simple-compat/1.2.3:
+    resolution: {integrity: sha512-vYepRjSriGRyEmFtSsTQoHWVQRbBMYR4ONATeZtuf8GDY8jWGkc6R4+lIb5rVhPBIkx3ru68bpl+9r8V4YA/nA==}
+    dependencies:
+      '@daybrush/utils': 1.7.1
+      '@egjs/list-differ': 1.0.0
+    dev: true
+
   /read-cache/1.0.0:
     resolution: {integrity: sha512-Owdv/Ft7IjOgm/i0xvNDZ1LrRANRfew4b2prF3OWMQLxLfu3bS8FVhCsrSCMK4lR56Y9ya+AThoTpDCTxCmpRA==}
     dependencies:
@@ -945,6 +1103,10 @@ packages:
     resolution: {integrity: sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==}
     dev: true
 
+  /string-hash/1.1.3:
+    resolution: {integrity: sha512-kJUvRUFK49aub+a7T1nNE66EJbZBMnBgoC1UbCZ5n6bsZKBRga4KgBRTMn/pFkeCZSYtNeSyMxPDM0AXWELk2A==}
+    dev: true
+
   /strip-indent/3.0.0:
     resolution: {integrity: sha512-laJTa3Jb+VQpaC6DseHhF7dXVqHTfJPCRDaEbid/drOhgitgYku/letMUqOXFoWV0zIIUbjpdH2t+tYj4bQMRQ==}
     engines: {node: '>=8'}
@@ -992,6 +1154,13 @@ packages:
       svelte: '>=3.19.0'
     dependencies:
       svelte: 3.49.0
+    dev: true
+
+  /svelte-moveable/0.26.3:
+    resolution: {integrity: sha512-dzyRmGxo3VJngFF4EVk4QqrEnMhn+45FB5jibLCwi3NkRfOy+RbqUUfAQlOwUrkk3HranCxThtkDP6EyHDq53Q==}
+    dependencies:
+      framework-utils: 1.1.0
+      moveable: 0.34.3
     dev: true
 
   /svelte-preprocess/4.10.7_bgntxiihuqhg5mwaa7nczjwpga:
