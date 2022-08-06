@@ -39,12 +39,16 @@
     >
       <div class="flex justify-center items-center h-full">
         <div class="text-white">
-          <h2 transition:typewriter class="font-semibold text-4xl mb-4">
-            Ronald Vilorio
-          </h2>
-          <h4 class="font-semibold text-xl mb-6">
-            Developer, Problem Solver, Runner
-          </h4>
+          {#if visible}
+            <h2 transition:typewriter class="font-semibold text-4xl mb-4">
+              Ronald Vilorio
+            </h2>
+          {/if}
+          {#if visible}
+            <h4 class="font-semibold text-xl mb-6">
+              Developer, Problem Solver, Runner
+            </h4>
+          {/if}
         </div>
       </div>
     </div>
