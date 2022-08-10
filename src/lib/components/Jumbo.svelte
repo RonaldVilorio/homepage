@@ -43,9 +43,7 @@
             <h2 transition:typewriter class="font-semibold text-4xl mb-4">
               Ronald Vilorio
             </h2>
-          {/if}
-          {#if visible}
-            <h4 class="font-semibold text-xl mb-6">
+            <h4 transition:typewriter class="font-semibold text-xl mb-6">
               Developer, Problem Solver, Runner
             </h4>
           {/if}
